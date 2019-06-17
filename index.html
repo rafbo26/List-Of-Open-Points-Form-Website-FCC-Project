@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LOP Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">List of Open Points</h1>
+    </header>
+    <main>
+        <p id="description">Please complete the form to submit request.</p>
+        <form id="survey-form" action="">
+            <!-- Status -->
+            <label class="label" for="dropdown">Status:</label>
+            <select name="dropdown" id="dropdown" placeholder="Select an option">
+                <option value="open">Open</option>
+                <option value="wip">Work in Progress</option>
+                <option value="closed">Closed</option>
+                <option value="cancelled">Cancelled</option>
+            </select>
+            <!-- Date -->
+            <label class="label" for="date">Date:</label>
+            <input type="date" name="date" id="date">
+            <!-- Project Name -->
+            <label class="label" for="project-name">Project Name:</label>
+            <input type="text" name="project-name" id="project-name">
+            <!-- Name -->
+            <label class="label" for="name" label="name-label">Requestor's Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <!-- Email -->
+            <label class="label" for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <!-- PSP -->
+            <label class="label" for="psp">PSP:</label>
+            <input type="text" name="psp" id="psp"placeholder="Enter PSP of the area">
+            <!-- Support -->
+            <label class="label" for="support">Support:</label>
+            <input type="text" name="support" id="support" placeholder="Enter support (i.e. LSS, BMW PSP, other PSP)">
+            <!-- Description -->
+            <label class="label" for="desc">Description:</label>
+            <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter your description here"></textarea>
+            <!-- Engaged -->
+            <p class="label">Engaged:</p>
+            <div id="engaged">
+                <!-- RHA -->
+                <input type="radio" name="engaged" id="rha">
+                <label for="rha">RHA</label>
+                <!-- BMW -->
+                <input type="radio" name="engaged" id="bmw">
+                <label for="bmw">BMW</label>
+                <!-- Both -->
+                <input type="radio" name="engaged" id="both">
+                <label for="both">RHA + BMW</label>
+            </div>
+            <!-- Completed -->
+            <p class="label">Completed:</p>
+            <div id="completed">
+                <!-- Project Plan -->
+                <input type="checkbox" name="project-plan" id="project-plan">
+                <label for="project-plan">Project Plan</label>
+                <!-- MTM Calculations -->
+                <input type="checkbox" name="mtm_calc" id="mtm_calc">
+                <label for="mtm_calc">MTM Calc</label>
+                <!-- Training -->
+                <input type="checkbox" name="training" id="training">
+                <label for="training">Training</label>
+                <!-- Quality Doc -->
+                <input type="checkbox" name="quality-doc" id="quality-doc">
+                <label for="quality-doc">Quality Doc</label>
+                <!-- Go Live Plan -->
+                <input type="checkbox" name="go-live" id="go-live">
+                <label for="go-live">Go Live Plan</label>
+                <!-- Evaluation Form -->
+                <input type="checkbox" name="eval-form" id="eval-form">
+                <label for="eval-form">Evaluation Form</label>
+                <!-- Stabilisation -->
+                <input type="checkbox" name="stabilisation" id="stabilisation">
+                <label for="stabilisation">Stabilisation</label>
+                <!-- Final MTM -->
+                <input type="checkbox" name="final-mtm" id="final-mtm">
+                <label for="final-mtm">Final MTM</label>
+            </div>
+            <p class="label">Updated:</p>
+            <div id="updated">
+                <!-- Layout -->
+                <input type="checkbox" name="layout" id="layout">
+                <label for="layout">Layout</label>
+                <!-- L-QAF / SuMa Tool -->
+                <input type="checkbox" name="l-qaf" id="l-qaf">
+                <label for="l-qaf">L-QAF / SuMa Tool</label>
+            </div>
+            <!-- Savings -->
+            <label class="label" for="number" id="number-label">Saving:</label>
+            <input type="number" min="0" max="1000000"  name="number" id="number" placeholder="Saving">
+            <!-- Comments -->
+            <label class="label" for="comments">Comments:</label>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
+            <div id="submit-div">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+            
+        </form>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2019 Rafal Borkowski</p>
+    </footer>
+</body>
+</html>
