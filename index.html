@@ -17,8 +17,9 @@
         <form id="survey-form" action="">
             <!-- Status -->
             <label class="label" for="dropdown">Status:</label>
-            <select name="dropdown" id="dropdown" placeholder="Select an option">
-                <option value="open">Open</option>
+            <select name="dropdown" id="dropdown">
+                <option value="">--Select Option--</option>
+              <option value="open">Open</option>
                 <option value="wip">Work in Progress</option>
                 <option value="closed">Closed</option>
                 <option value="cancelled">Cancelled</option>
@@ -30,11 +31,11 @@
             <label class="label" for="project-name">Project Name:</label>
             <input type="text" name="project-name" id="project-name">
             <!-- Name -->
-            <label class="label" for="name" label="name-label">Requestor's Name:</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <label class="label" for="name" id="name-label">Requestor's Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
             <!-- Email -->
             <label class="label" for="email" id="email-label">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
             <!-- PSP -->
             <label class="label" for="psp">PSP:</label>
             <input type="text" name="psp" id="psp"placeholder="Enter PSP of the area">
@@ -48,55 +49,55 @@
             <p class="label">Engaged:</p>
             <div id="engaged">
                 <!-- RHA -->
-                <input type="radio" name="engaged" id="rha">
+                <input type="radio" name="engaged" id="rha" value="rha">
                 <label for="rha">RHA</label>
                 <!-- BMW -->
-                <input type="radio" name="engaged" id="bmw">
+                <input type="radio" name="engaged" id="bmw" value="bmw">
                 <label for="bmw">BMW</label>
                 <!-- Both -->
-                <input type="radio" name="engaged" id="both">
+                <input type="radio" name="engaged" id="both" value="both">
                 <label for="both">RHA + BMW</label>
             </div>
             <!-- Completed -->
             <p class="label">Completed:</p>
             <div id="completed">
                 <!-- Project Plan -->
-                <input type="checkbox" name="project-plan" id="project-plan">
+                <input type="checkbox" name="project-plan" id="project-plan" value="project-plan">
                 <label for="project-plan">Project Plan</label>
                 <!-- MTM Calculations -->
-                <input type="checkbox" name="mtm_calc" id="mtm_calc">
+                <input type="checkbox" name="mtm_calc" id="mtm_calc" value="mtm_calc">
                 <label for="mtm_calc">MTM Calc</label>
                 <!-- Training -->
-                <input type="checkbox" name="training" id="training">
+                <input type="checkbox" name="training" id="training" value="training">
                 <label for="training">Training</label>
                 <!-- Quality Doc -->
-                <input type="checkbox" name="quality-doc" id="quality-doc">
+                <input type="checkbox" name="quality-doc" id="quality-doc" value="quality-doc">
                 <label for="quality-doc">Quality Doc</label>
                 <!-- Go Live Plan -->
-                <input type="checkbox" name="go-live" id="go-live">
+                <input type="checkbox" name="go-live" id="go-live" value="go-live">
                 <label for="go-live">Go Live Plan</label>
                 <!-- Evaluation Form -->
-                <input type="checkbox" name="eval-form" id="eval-form">
+                <input type="checkbox" name="eval-form" id="eval-form" value="eval-form">
                 <label for="eval-form">Evaluation Form</label>
                 <!-- Stabilisation -->
-                <input type="checkbox" name="stabilisation" id="stabilisation">
+                <input type="checkbox" name="stabilisation" id="stabilisation" value="stabilisation">
                 <label for="stabilisation">Stabilisation</label>
                 <!-- Final MTM -->
-                <input type="checkbox" name="final-mtm" id="final-mtm">
+                <input type="checkbox" name="final-mtm" id="final-mtm" value="final-mtm">
                 <label for="final-mtm">Final MTM</label>
             </div>
             <p class="label">Updated:</p>
             <div id="updated">
                 <!-- Layout -->
-                <input type="checkbox" name="layout" id="layout">
+                <input type="checkbox" name="layout" id="layout" value="layout">
                 <label for="layout">Layout</label>
                 <!-- L-QAF / SuMa Tool -->
-                <input type="checkbox" name="l-qaf" id="l-qaf">
+                <input type="checkbox" name="l-qaf" id="l-qaf" value="l-qaf">
                 <label for="l-qaf">L-QAF / SuMa Tool</label>
             </div>
             <!-- Savings -->
             <label class="label" for="number" id="number-label">Saving:</label>
-            <input type="number" min="0" max="1000000"  name="number" id="number" placeholder="Saving">
+            <input type="number" min="0" max="1000000"  name="number" id="number" placeholder="Saving" required>
             <!-- Comments -->
             <label class="label" for="comments">Comments:</label>
             <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
